@@ -1,0 +1,68 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 10vh;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.btn-large {
+  width: 80%;
+  height: 80%;
+}
+
+.btn-small {
+  width: 65%;
+  height: 65%;
+}
+
+.btn-close {
+  background-color: #c4323d;
+
+  svg {
+    transform: scale(1.5);
+  }
+}
+
+.btn-faq {
+  background-color: #0cb3c6;
+
+  svg {
+    transform: scale(1.5);
+  }
+}
+
+.btn-check {
+  background-color: #748d39;
+
+  svg {
+    transform: rotate(-15deg);
+  }
+}
+
+.btn-backspace {
+  background-color: #c4323d;
+
+  svg {
+    transform: rotate(-15deg);
+  }
+}
+
+.btn-digit {
+  background-color: #0cb3c6;
+
+  p {
+    transform: rotate(-15deg);
+  }
+}

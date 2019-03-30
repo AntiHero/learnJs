@@ -1,0 +1,29 @@
+$color-background: #ecf7fd;
+$color-text: #b1d6df;
+
+.stages-screen {
+  width: 100%;
+  height: 100%;
+
+  background: $color-background;
+
+  h3 {
+    text-align: center;
+    color: $color-text;
+  }
+}
+
+.stage-circle {
+  width: 50vmin;
+  height: 50vmin;
+  margin: 100px auto;
+
+  border: 5px solid $color-text;
+  border-radius: 50%;
+
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}

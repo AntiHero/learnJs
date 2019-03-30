@@ -1,0 +1,37 @@
+$color-background: #ecf7fd;
+$color-text-available: #afd3df;
+$color-text-not-available: #d6d6d6;
+
+.menu-screen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: $color-background;
+
+  ul {
+    margin: auto;
+    padding: 0;
+  }
+
+  li {
+    margin: 15px auto;
+
+    list-style: none;
+    text-align: center;
+  }
+
+  a {
+    font-size: 36px;
+    text-decoration: none;
+  }
+
+  .available {
+    color: $color-text-available;
+  }
+
+  .not-available {
+    color: $color-text-not-available;
+  }
+}

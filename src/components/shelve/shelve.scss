@@ -1,0 +1,68 @@
+$color-background: #ecf7fd;
+$color-shelve: #b0d4e0;
+$height-elem: 12.5vh;
+$diameter: $height-elem * 0.6;
+
+.shelve-screen {
+  width: 100%;
+  height: 100%;
+
+  background-color: $color-background;
+}
+
+.shelve-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: $height-elem;
+}
+
+.shelve-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shelve-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 25%;
+  height: $height-elem;
+
+  border-bottom: $color-shelve solid 5px;
+}
+
+.shelve-digit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $diameter;
+  height: $diameter;
+
+  font-size: 20px;
+  color: #000000;
+
+  background-color: $color-shelve;
+  border-radius: 50%;
+}
+
+.award {
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background: {
+    position: center center;
+
+    image: url("../../img/cactus.png");
+    repeat: no-repeat;
+    size: contain;
+  }
+}
+
+.award-progress {
+  width: 100%;
+  height: 100%;
+}

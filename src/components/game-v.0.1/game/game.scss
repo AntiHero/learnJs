@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+$default-margin: 5vmin;
+
+%flex-n-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #f9f9ef;
+}
+
+.game-header {
+  @extend %flex-n-centering;
+
+  margin: $default-margin;
+}
+
+.game-condition {
+  @extend %flex-n-centering;
+
+  flex-grow: 1;
+
+  font-style: italic;
+  font-size: 30px;
+}
+
+.game-answer {
+  @extend %flex-n-centering;
+
+  margin: $default-margin $default-margin 0;
+
+  font-style: italic;
+  font-size: 20px;
+
+  .game-answer__input {
+    width: 100%;
+    margin: $default-margin;
+    padding: 1vmin 3vmin;
+
+    font-style: normal;
+
+    background-color: #fdd14c;
+    border: none;
+    border-radius: 20vmin;
+    transform: skew(-20deg);
+  }
+}
+
+.game-keyboard {
+  @extend %flex-n-centering;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 $default-margin;
+}
