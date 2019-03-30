@@ -13,7 +13,7 @@ fetch(url)
   })
   .then(content => {
     fs.writeFile(
-      '../open_questions.json',
+      'open_questions.json',
       JSON.stringify(content.attributes),
       function(err) {
         if (err) {

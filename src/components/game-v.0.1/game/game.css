@@ -1,0 +1,41 @@
+body {
+  margin: 0; }
+
+.game-header, .game-condition, .game-answer, .game-keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9f9ef; }
+
+.game-header {
+  margin: 5vmin; }
+
+.game-condition {
+  flex-grow: 1;
+  font-style: italic;
+  font-size: 30px; }
+
+.game-answer {
+  margin: 5vmin 5vmin 0;
+  font-style: italic;
+  font-size: 20px; }
+  .game-answer .game-answer__input {
+    width: 100%;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    font-style: normal;
+    background-color: #fdd14c;
+    border: none;
+    border-radius: 20vmin;
+    transform: skew(-20deg); }
+
+.game-keyboard {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5vmin; }
