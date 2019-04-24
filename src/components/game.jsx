@@ -62,8 +62,6 @@ class Game extends Component {
     this.setState(
       {
         question: this.questionsList[store.getState().progress.total].question,
-        //response: this.questionsList[store.getState().progress.total]
-        //.correctAnswer,
         questionType: this.questionsList[store.getState().progress.total]
           .questionType,
         explanation: this.questionsList[store.getState().progress.total]
@@ -117,7 +115,7 @@ class Game extends Component {
       })
       .then(data => {
         this.setState({
-          maxNumber: data.complexity[store.getState().complexity].maxNumber,
+          // maxNumber: data.complexity[store.getState().complexity].maxNumber,
           config: data,
         });
         this.setQuestionsNextLevel();
@@ -215,6 +213,7 @@ class Game extends Component {
     store.dispatch(testNextLevel());
     this.questionsList = generateQuestionsList(
       store.getState().complexity,
+      store.getState().theme,
       this.state.config,
       this.state.numberOfQuestions,
     );
@@ -404,7 +403,6 @@ class Game extends Component {
     this.setState({
       value: event.target.value,
     });
-    console.log(this.state.value);
   };
 
   handleKeyPress = event => {
@@ -419,7 +417,6 @@ class Game extends Component {
           },
         );
       }
-      console.log('enter');
     }
   };
 
